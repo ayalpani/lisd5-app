@@ -2,6 +2,7 @@ package com.bubblesapp;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
@@ -60,6 +61,8 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
+
+
 
   /**
    * Loads Flipper in React Native templates. Call this in the onCreate method with something like

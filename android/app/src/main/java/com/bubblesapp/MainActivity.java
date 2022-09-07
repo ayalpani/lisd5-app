@@ -8,17 +8,18 @@ import org.devio.rn.splashscreen.SplashScreen; // here
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
 
 
 
 
 public class MainActivity extends ReactActivity {
 
-   @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        SplashScreen.show(this);  // here
-        super.onCreate(savedInstanceState);
-    }
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this);  // here
+    super.onCreate(savedInstanceState);
+  }
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
@@ -26,8 +27,9 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "BubblesApp";
+    return "LisdApp";
   }
+
 
   // https://www.bennettnotes.com/react-native-android-receive-data-from-share-intent/
   @Override
@@ -39,7 +41,8 @@ public class MainActivity extends ReactActivity {
         Bundle bundle = new Bundle();
         bundle.putString("url", intent.getStringExtra(Intent.EXTRA_TEXT));
         return bundle;
-    }
+      }
+
     };
   }
 
@@ -55,6 +58,7 @@ public class MainActivity extends ReactActivity {
       reactRootView.setIsFabric(BuildConfig.IS_NEW_ARCHITECTURE_ENABLED);
       return reactRootView;
     }
+
   }
 
 

@@ -10,11 +10,23 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-native-fontawesome": "^0.2.7",
+    "@gorhom/bottom-sheet": "^3.6.6",
     "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/cameraroll": "^4.1.2",
     "@react-native-community/netinfo": "^9.3.0",
+    "fbjs": "^3.0.4",
     "react": "17.0.2",
     "react-native": "0.68.2",
+    "react-native-camera": "^4.2.1",
+    "react-native-gesture-handler": "^2.6.0",
+    "react-native-image-base64-png": "^0.2.1",
+    "react-native-reanimated": "^2.10.0",
     "react-native-splash-screen": "^3.3.0",
+    "react-native-svg": "^13.1.0",
     "react-native-webview": "^11.21.0"
   },
   "devDependencies": {
