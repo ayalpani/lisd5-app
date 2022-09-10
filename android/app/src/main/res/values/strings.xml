@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">LisdApp</string>
+	<string name="app_name">
+		BubblesApp
+	</string>
 </resources>
