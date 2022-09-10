@@ -6,7 +6,6 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import SplashScreen from 'react-native-splash-screen';
 import WebView from 'react-native-webview';
 import {SERVER_URI_NETLIFYLISD5} from '../constants';
-import CameraRoller from './CameraRoller';
 import Loading from './Loading';
 
 const styles = StyleSheet.create({
@@ -48,7 +47,7 @@ const ErrorPage = () => {
       <StatusBar
         translucent={true}
         barStyle="dark-content"
-        backgroundColor={styles.Overlay.backgroundColor}
+        // backgroundColor={styles.Overlay.backgroundColor}
       />
       {netInfo.isConnected && (
         <View style={styles.OverlayEmojiText}>
@@ -185,7 +184,7 @@ const App = (props: any) => {
       <View style={styles.App}>
         <StatusBar
           barStyle="light-content"
-          backgroundColor="blue"
+          //backgroundColor="blue"
           translucent={false}
         />
 
@@ -214,13 +213,13 @@ const App = (props: any) => {
         <Loading doHide={isAppReady} />
         {/* <ImageUploadButton webviewRef={webviewRef} /> */}
 
-        <CameraRoller
+        {/* <CameraRoller
           isHidden={isCameraRollerHidden}
           setIsHidden={setIsCameraRollerHidden}
           onSelect={(imageUrls: string[]) => {
             console.log('onSelect', imageUrls);
           }}
-        />
+        /> */}
       </View>
     </GestureHandlerRootView>
   );

@@ -17,7 +17,7 @@ MainComponentsRegistry::sharedProviderRegistry() {
 
   // Autolinked providers registered by RN CLI
   rncli_registerProviders(providerRegistry);
-  
+
   // Custom Fabric Components go here. You can register custom
   // components coming from your App or from 3rd party libraries here.
   //
